@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CinemaClientFlowSuite" verbose="1">
+    <listeners>
+        <listener class-name="cinema.utils.ExtentReportListener"/>
+    </listeners>
+    <test name="ClientFlowTests">
+        <classes>
+            <class name="cinema.tests.RegisterTest"/>
+            <class name="cinema.tests.LoginTest"/>
+            <class name="cinema.tests.MovieBrowseTest"/>
+            <class name="cinema.tests.BookingFlowTest"/>
+        </classes>
+    </test>
+</suite>
